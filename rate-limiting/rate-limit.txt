@@ -1,0 +1,10 @@
+A rate limiter controls how many requests a user/system can make in a given period.
+Its goal:
+
+*Prevent abuse or DDoS
+*Protect server resources
+*Ensure fair usage
+*Smooth out traffic spikes
+
+Example:
+"Allow max 100 requests per minute per user."

@@ -1,0 +1,2 @@
+“Hello World Hello Again” dcknsadnsac jkdnsads
+Answer: Streams in Node.js are objects that allow you to read or write data continuously. They are used to handle large amounts of data efficiently, without loading it all into memory at once. Streams can be readable, writable, or both.

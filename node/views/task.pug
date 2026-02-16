@@ -1,0 +1,21 @@
+//- views/tasks.pug
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Users 
+  body
+    h1 User List
+
+    //- Show tasks if they exist
+    if tasks && tasks.length
+      ul
+        each task, idx in tasks
+          li #{idx + 1}. #{task.user_name}
+    else
+      p No tasks available.
+
+    //- Add new task form
+    form(action="/tasks", method="POST")
+      input(type="text", name="task", placeholder="New task")
+      button(type="submit") Add Task
